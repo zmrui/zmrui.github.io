@@ -16,5 +16,14 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Install NS3 DCE on Ubuntu 16.04 in Dec. 2021</title>
+      <link>https://zmrui.github.io/post/install-ns3-dce/</link>
+      <pubDate>Tue, 21 Dec 2021 02:41:00 -0600</pubDate>
+      
+      <guid>https://zmrui.github.io/post/install-ns3-dce/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

@@ -2,9 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://zmrui.github.io/tags/20.04/</loc>
-    <lastmod>2022-02-16T14:38:29-06:00</lastmod>
-  </url><url>
     <loc>https://zmrui.github.io/categories/</loc>
     <lastmod>2022-02-16T14:38:29-06:00</lastmod>
   </url><url>
@@ -29,17 +26,14 @@
     <loc>https://zmrui.github.io/</loc>
     <lastmod>2022-02-16T14:38:29-06:00</lastmod>
   </url><url>
+    <loc>https://zmrui.github.io/post/install-ns3-dce/</loc>
+    <lastmod>2021-12-21T02:41:00-06:00</lastmod>
+  </url><url>
+    <loc>https://zmrui.github.io/tags/ns3/</loc>
+    <lastmod>2021-12-21T02:41:00-06:00</lastmod>
+  </url><url>
     <loc>https://zmrui.github.io/post/hello-world/</loc>
-    <lastmod>2022-02-16T14:23:58-06:00</lastmod>
-  </url><url>
-    <loc>https://zmrui.github.io/categories/subcategory/</loc>
-    <lastmod>2022-02-16T14:23:58-06:00</lastmod>
-  </url><url>
-    <loc>https://zmrui.github.io/tags/tag1/</loc>
-    <lastmod>2022-02-16T14:23:58-06:00</lastmod>
-  </url><url>
-    <loc>https://zmrui.github.io/tags/tag2/</loc>
-    <lastmod>2022-02-16T14:23:58-06:00</lastmod>
+    <lastmod>1970-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zmrui.github.io/archives/</loc>
   </url>
