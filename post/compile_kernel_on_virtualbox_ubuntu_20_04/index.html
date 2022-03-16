@@ -222,28 +222,30 @@ sudo update-grub
 <pre><code>cp /boot/config-$(uname -r) .config
 </code></pre><p>编辑.config，在行首加#以注释掉需要证书的配置。[2]
 这里需要注意CONFIG_SYSTEM_REVOCATION_KEYS也要注释掉，可能是新版本变更，之前的教程均未提到</p>
-<pre><code>vim .config
-comment:
-CONFIG_MODULE_SIG_ALL,
-CONFIG_MODULE_SIG_KEY
-CONFIG_SYSTEM_TRUSTED_KEYS
-CONFIG_SYSTEM_REVOCATION_KEYS
-</code></pre><p>加载，保存，退出。按tab键切换下方选项</p>
-<pre><code>sudo make menuconfig
-</code></pre><p>load -&gt; save -&gt; exit</p>
 <p>奇怪的设置，但是可以解决错误3[7]</p>
 <pre><code>scripts/config --disable SYSTEM_REVOCATION_KEYS
 scripts/config --disable SYSTEM_TRUSTED_KEYS
-</code></pre><h2 id="4-开始编译">4. 开始编译</h2>
+</code></pre><pre><code>vim .config
+comment:
+CONFIG_MODULE_SIG_ALL
+CONFIG_MODULE_SIG_KEY
+CONFIG_SYSTEM_TRUSTED_KEYS
+CONFIG_SYSTEM_REVOCATION_KEYS
+增加buffer容量
+CONFIG_LOG_BUF_SHIFT=21
+</code></pre><p>加载，保存，退出。按tab键切换下方选项</p>
+<pre><code>sudo make menuconfig
+</code></pre><p>load -&gt; save -&gt; exit</p>
+<h2 id="4-开始编译">4. 开始编译</h2>
 <p>需要先编译bzImage[5,6]，可能是新版本变更，之前的教程均未提到</p>
-<pre><code>make -j4 bzImage
+<pre><code>sudo make -j4 bzImage
 
 sudo make -j4
 </code></pre><p>-j4是4个线程
 这里，不要编译成deb包，会变得不幸[4]</p>
 <h2 id="5-安装">5. 安装</h2>
-<pre><code>make modules_install 
-make install
+<pre><code>sudo make modules_install 
+sudo make install
 sudo update-initramfs -c -k 5.16.9
 sudo update-grub
 </code></pre><p><img src="https://zmrui.github.io/media/post-Compile-Kernel-On-Ubuntu-20.04-in-Virtualbox/1.png" alt=""></p>
@@ -360,30 +362,6 @@ make[1]: *** [scripts/Makefile.package:77: deb-pkg] Error 2 make:
 
 
             
-  
-    <div id="disqus_thread">
-      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-    </div>
-    <script type="text/javascript">
-      var disqus_config = function() {
-        this.page.url = 'https:\/\/zmrui.github.io\/post\/compile_kernel_on_virtualbox_ubuntu_20_04\/';
-        
-          this.page.identifier = '\/post\/compile_kernel_on_virtualbox_ubuntu_20_04\/'
-        
-      };
-      (function() {
-        
-        
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-          document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-          return;
-        }
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        var disqus_shortname = '';
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-    </script>
   
 
 
