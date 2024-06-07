@@ -3,7 +3,6 @@ title = 'Mingrui Zhang'
 framed = true
 +++
 
-## At a Glance 
 
 Mingrui Zhang is currently a second-year Ph.D. Student in the School of Computing, University of Nebraska-Lincoln, under the supervision of Prof. Lisong Xu. 
 
