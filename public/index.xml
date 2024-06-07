@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mingrui Zhang</title>
+    
+    
+    
+    <link>/</link>
+    <description>Recent content on Mingrui Zhang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Mingrui Zhang &amp;copy; 2024</copyright>
+    <lastBuildDate>Tue, 04 Jun 2024 08:59:55 -0500</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          Mingrui Zhang
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>Mainpage</title>
+      <link>/mainpage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mainpage/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          Mingrui Zhang#
+          
+        
+        </description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/publications/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          Conference paper#
+          
+        
+        </description>
+    </item>
+    
+  </channel>
+</rss>

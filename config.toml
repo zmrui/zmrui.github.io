@@ -1,0 +1,61 @@
+baseurl = "/"
+languageCode = "en-us"
+theme = "hello-friend"
+paginate = 5
+
+[params]
+  # dir name of your blog content (default is `content/posts`).
+  # the list of set content will show up on your index page (baseurl).
+  contentTypeName = "posts"
+
+  # OS theme is default when not provided, but you can force it to "light" or "dark"
+  defaultTheme = "light"
+
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 6
+
+  # Show reading time in minutes for posts
+  showReadingTime = false
+
+[languages]
+  [languages.en]
+    title = "Mingrui Zhang"
+    subtitle = ""
+    keywords = ""
+    copyright = "Mingrui Zhang &copy; 2024"
+    menuMore = "More"
+    writtenBy = "Written by"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    minuteReadingTime = "min read"
+    dateFormatSingle = "2006-01-02"
+    dateFormatList = "2006-01-02"
+    # leave empty to disable, enter display text to enable
+    # lastModDisplay = ""
+
+    [params.logo]
+      logoText = "Mingrui Zhang"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+    [menu]
+      [[menu.main]]
+        identifier = "about"
+        weight = 2
+        name = "About"
+        url = "/about"
+      [[menu.main]]
+        identifier = "publications"
+        weight = 2
+        name = "Publications"
+        url = "/publications"
+      [[menu.main]]
+        identifier = "Teaching"
+        weight = 2
+        name = "Teaching"
+        url = "/teaching"
