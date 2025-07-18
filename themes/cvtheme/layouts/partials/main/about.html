@@ -1,7 +1,7 @@
 <section class="mb-8">
     <div>
-        <h3 class="text-2xl font-bold">{{ site.Data.cv.about.name }}</h3>
-        <p class="text-xl text-gray-600">{{ site.Data.cv.about.title }}</p>
+        <h3 class="text-xl font-bold">{{ site.Data.cv.about.name }}</h3>
+        <p class="text-lg text-gray-600">{{ site.Data.cv.about.title }}</p>
         <div class="flex space-x-4 mt-2">
             {{ with site.Data.cv.about.email }}
             <a href="mailto:{{ . }}" class="text-blue-500 hover:underline">{{ . }}</a>

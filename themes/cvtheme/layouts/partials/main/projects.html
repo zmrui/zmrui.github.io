@@ -1,9 +1,9 @@
 <section class="mb-8">
-    <h2 class="text-3xl font-bold mb-4 border-b-2 border-gray-300 pb-2">Projects</h2>
+    <h2 class="text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2">Projects</h2>
     <div class="space-y-4">
         {{ range site.Data.cv.projects }}
         <div class="mb-4">
-            <h3 class="text-xl font-bold"><a href="{{ .link }}" class="text-blue-500 hover:underline">{{ .name }}</a></h3>
+            <h3 class="text-lg font-bold"><a href="{{ .link }}" class="text-blue-500 hover:underline">{{ .name }}</a></h3>
             <p class="mt-2">{{ .description }}</p>
         </div>
         {{ end }}
