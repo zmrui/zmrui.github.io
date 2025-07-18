@@ -1,0 +1,4 @@
+baseURL = ''
+languageCode = 'en-us'
+title = "Mingrui Zhang"
+theme = "cvtheme"

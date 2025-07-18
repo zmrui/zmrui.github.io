@@ -1,0 +1,54 @@
+# data/cv.toml
+
+[about]
+  name = "Mingrui Zhang"
+  title = "Ph.D. Student in Computer Science"
+  google_scholar = "https://scholar.google.com/citations?user=s-KRj78AAAAJ&hl=en"
+  github = "https://github.com/zmrui"
+    summary = """
+Mingrui Zhang is currently a Ph.D. Student in the School of Computing, University of Nebraska-Lincoln, under the supervision of Prof. Lisong Xu. Co-supervised by Prof. Hamid Bagheri.
+
+His research interests include networking and software engineering, including network protocols, TCP congestion control, and formal methods. 
+"""
+[[education]]
+  institution = "University of Nebraska-Lincoln"
+  degree = "Ph.D. in Computer Science"
+  period = "2023 - Present"
+
+[[education]]
+  institution = "University of Nebraska-Lincoln"
+  degree = "M.S. in Computer Science"
+  period = "2021 - 2023"
+
+[[education]]
+  institution = "Beijing University of Technology"
+  degree = "B.S. in Computer Science"
+  period = "2016 - 2020"
+
+[[publications]]
+  title = "Toward Non-Expert Customized Congestion Control"
+  authors = "Mingrui Zhang, Hamid Bagheri and Lisong Xu"
+  publication = "Proceedings of the 2025 IEEE International Conference on Communications(ICC)"
+  code_link = "https://github.com/zmrui/NECC"
+
+[[publications]]
+  title = "Accuracy Evaluation of TCP FlightSize Estimation: Analytical and Experimental Study"
+  authors = "Mingrui Zhang, Phuong Ha, Hamid Bagheri and Lisong Xu"
+  publication = "Proceedings of the 2025 International Conference on Computing, Networking and Communications (ICNC)"
+  paper_link = "http://www.conf-icnc.org/2025/papers/p677-zhang.pdf"
+  code_link = "https://github.com/zmrui/FlightSize"
+
+[[publications]]
+  title = "Scalable Verification of Multi-ACK Properties in Loss-Based Congestion Control Implementations"
+  authors = "Minh Vu, Hamid Bagheri, Lisong Xu, Wei Sun and Mingrui Zhang"
+  publication = "Proceedings of the 2024 IEEE 32nd International Conference on Network Protocols (ICNP)"
+
+[[publications]]
+  title = "Experimental Study of Linux Flightsize Estimation"
+  authors = "Mingrui Zhang"
+  publication = "Master's Thesis"
+
+[[publications]]
+  title = "Symbolic ns-3 for Efficient Exhaustive Testing: Design, Implementation, and Simulations"
+  authors = "Jianfei Shao, Minh Vu, Mingrui Zhang, Asmita Jayswal and Lisong Xu"
+  publication = "Proceedings of the 2022 Workshop on ns-3"

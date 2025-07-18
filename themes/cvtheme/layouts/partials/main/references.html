@@ -1,0 +1,16 @@
+<section class="mb-8">
+    <h2 class="text-3xl font-bold mb-4 border-b-2 border-gray-300 pb-2">References</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {{ range site.Data.cv.references }}
+        <div class="mb-4">
+            <h3 class="text-xl font-bold">{{ .name }}</h3>
+            <p class="text-gray-800">{{ .title }}</p>
+            <div class="flex space-x-4 mt-2">
+                <a href="mailto:{{ .email }}" class="text-blue-500 hover:underline">{{ .email }}</a>
+                <span>|</span>
+                <a href="tel:{{ .phone }}" class="text-blue-500 hover:underline">{{ .phone }}</a>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section> 

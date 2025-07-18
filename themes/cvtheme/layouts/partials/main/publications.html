@@ -1,0 +1,20 @@
+<section class="mb-8">
+    <h2 class="text-3xl font-bold mb-4 border-b-2 border-gray-300 pb-2">Publications</h2>
+    <div class="space-y-4">
+        {{ range site.Data.cv.publications }}
+        <div class="mb-4">
+            <h3 class="text-xl font-bold">{{ .title }}</h3>
+            <p class="text-gray-800">{{ .authors }}</p>
+            <p class="text-gray-600"><em>{{ .publication }}</em></p>
+            <div class="flex space-x-4 mt-2">
+                {{ with .paper_link }}
+                <a href="{{ . }}" class="text-blue-500 hover:underline">[Paper]</a>
+                {{ end }}
+                {{ with .code_link }}
+                <a href="{{ . }}" class="text-blue-500 hover:underline">[Code]</a>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section> 
