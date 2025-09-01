@@ -35,6 +35,7 @@ His research interests include networking and software engineering, including ne
   title = "Toward Non-Expert Customized Congestion Control"
   authors = "**Mingrui Zhang**, Hamid Bagheri and Lisong Xu"
   publication = "2025 IEEE International Conference on Communications(ICC)"
+  paper_link = "https://github.com/zmrui/NECC/blob/35e81abfa14ad16dbcf92e9b3abd7a61ae56b92c/p3288-zhang.pdf"
   code_link = "https://github.com/zmrui/NECC"
 
 [[publications]]
