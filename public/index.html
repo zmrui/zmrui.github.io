@@ -55,8 +55,90 @@
         
         <main class="flex-grow">
             
+<nav class="fixed top-4 right-4 bg-white border border-gray-300 rounded-lg shadow-lg p-4 max-w-xs z-50 hidden lg:block">
+    <ul class="space-y-2">
+        <li>
+            <a href="#about" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200">
+                About
+            </a>
+        </li>
+        <li>
+            <a href="#education" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200">
+                Education
+            </a>
+        </li>
+        <li>
+            <a href="#experience" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200">
+                Experience
+            </a>
+        </li>
+        <li>
+            <a href="#publications" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200">
+                Publications
+            </a>
+        </li>
+        
+        <li>
+            <a href="#awards" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200">
+                Awards
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+
+<button id="outline-toggle" class="lg:hidden fixed top-4 right-4 bg-blue-600 text-white p-2 rounded-full shadow-lg z-50">
+    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+</button>
+
+
+<div id="mobile-outline" class="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-40 hidden">
+    <div class="fixed top-4 right-4 bg-white border border-gray-300 rounded-lg shadow-lg p-4 max-w-xs">
+        <div class="flex justify-end mb-3">
+            <button id="outline-close" class="text-gray-500 hover:text-gray-700">
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <ul class="space-y-2">
+            <li>
+                <a href="#about" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200 outline-link">
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="#education" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200 outline-link">
+                    Education
+                </a>
+            </li>
+            <li>
+                <a href="#experience" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200 outline-link">
+                    Experience
+                </a>
+            </li>
+            <li>
+                <a href="#publications" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200 outline-link">
+                    Publications
+                </a>
+            </li>
+            
+            <li>
+                <a href="#awards" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200 outline-link">
+                    Awards
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+            
 <div class="container mx-auto px-4 py-8 max-w-4xl">
-    <section class="mb-8">
+    <section id="about" class="mb-8">
     <div>
         <h3 class="text-xl font-bold">Mingrui Zhang</h3>
         <p class="text-lg text-gray-600">Ph.D. Student in Computer Science</p>
@@ -91,7 +173,7 @@
         </div>
     </div>
 </section> 
-    <section class="mb-8">
+    <section id="education" class="mb-8">
     <h2 class="text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2">Education</h2>
     <div class="space-y-4">
         
@@ -124,7 +206,7 @@
         
     </div>
 </section> 
-    <section class="mb-8">
+    <section id="experience" class="mb-8">
     <h2 class="text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2">Experience</h2>
     <div class="space-y-4">
         
@@ -160,7 +242,7 @@
         
     </div>
 </section> 
-    <section class="mb-8">
+    <section id="publications" class="mb-8">
     <h2 class="text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2">Publications</h2>
     <div class="space-y-4">
         
@@ -234,7 +316,7 @@
         
     </div>
 </section> 
-    <section class="mb-8">
+    <section id="awards" class="mb-8">
     
     <h2 class="text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2">Awards</h2>
     <div class="space-y-4">

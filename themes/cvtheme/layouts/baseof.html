@@ -9,6 +9,7 @@
             {{ partial "header.html" . }}
         </header> -->
         <main class="flex-grow">
+            {{ partial "outline.html" . }}
             {{ block "main" . }}{{ end }}
         </main>
         <footer class="bg-gray-800 text-white p-4">
