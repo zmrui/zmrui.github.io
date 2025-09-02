@@ -50,6 +50,8 @@ His research interests include networking and software engineering, including ne
   title = "Scalable Verification of Multi-ACK Properties in Loss-Based Congestion Control Implementations"
   authors = "Minh Vu, Hamid Bagheri, Lisong Xu, Wei Sun and **Mingrui Zhang**"
   publication = "2024 IEEE 32nd International Conference on Network Protocols (ICNP)"
+  code_link = "https://github.com/verifiabletcp/asm"
+  code_link2 = "https://github.com/zmrui/tcp_cubic_fix"
 
 [[publications]]
   title = "Experimental Study of Linux Flightsize Estimation"
