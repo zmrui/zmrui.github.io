@@ -60,6 +60,12 @@ His research interests include networking and software engineering, including ne
   authors = "Jianfei Shao, Minh Vu, **Mingrui Zhang**, Asmita Jayswal and Lisong Xu"
   publication = "2022 Workshop on ns-3"
 
+[[publications]]
+  title = "User-Perceived Latency to Measure CCAs"
+  authors = "**Mingrui Zhang**, Vidhi Goel, Lisong Xu"
+  publication = "2021 Internet Architecture Board, Workshop: Measuring Network Quality for End-Users"
+  paper_link = "https://datatracker.ietf.org/meeting/interim-2021-mnqeuws-03/materials/slides-interim-2021-mnqeuws-03-sessa-mingrui-zhang-vidhi-goel-lisong-xu-user-perceived-latency-to-measure-ccas-00"
+
 [[experience]]
   company = "University of Nebraska – Lincoln"
   position = "Graduate Research Assistant"
