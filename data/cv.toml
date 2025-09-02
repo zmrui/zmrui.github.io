@@ -59,3 +59,31 @@ His research interests include networking and software engineering, including ne
   title = "Symbolic ns-3 for Efficient Exhaustive Testing: Design, Implementation, and Simulations"
   authors = "Jianfei Shao, Minh Vu, **Mingrui Zhang**, Asmita Jayswal and Lisong Xu"
   publication = "2022 Workshop on ns-3"
+
+[[experience]]
+  company = "University of Nebraska – Lincoln"
+  position = "Graduate Research Assistant"
+  period = "2023 - Present"
+
+[[experience]]
+  company = "University of Nebraska – Lincoln"
+  position = "Graduate Teaching Assistant"
+  period = "2022 Spring"
+  description = "Data Structures and Algorithms (CSCE 311)"
+
+[[experience]]
+  company = "University of Nebraska – Lincoln"
+  position = "Graduate Teaching Assistant"
+  period = "2022 Fall"
+  description = "Data Modeling for Systems Development (CSCE 411/811)"
+
+
+ [[awards]]
+   title = "INFOCOM 2024 Student Travel Grant "
+   organization = "from NSF"
+   period = "2024"
+
+ [[awards]]
+   title = "Nebraska Engineering Recruitment Fellowship"
+   organization = "from College of Engineering at the University of Nebraska – Lincoln"
+   period = "2023-2025"

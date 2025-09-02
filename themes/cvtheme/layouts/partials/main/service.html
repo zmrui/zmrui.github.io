@@ -1,0 +1,19 @@
+<section class="mb-8">
+    {{ with site.Data.cv.service }}
+    <h2 class="text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2">Service</h2>
+    <div class="space-y-4">
+        {{ range . }}
+        <div class="mb-4">
+            <div class="flex justify-between items-center">
+                <h3 class="text-lg font-bold">{{ .role }}</h3>
+                {{ with .period }}<p class="text-gray-600">{{ . }}</p>{{ end }}
+            </div>
+            {{ with .organization }}<p class="text-base text-gray-800">{{ . }}</p>{{ end }}
+            {{ with .description }}<p class="mt-2">{{ . }}</p>{{ end }}
+        </div>
+        {{ end }}
+    </div>
+    {{ end }}
+</section>
+
+

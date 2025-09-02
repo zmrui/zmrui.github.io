@@ -1,7 +1,39 @@
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 <style>
+    /* Page background */
+    body.bg-white {
+        background-color: #eeeeee;
+    }
+
+    /* Main text area */
+    main .container {
+        background-color: #ffffff;
+    }
+
+    body {
+        font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    }
     .prose p {
         margin-top: 1.25em;
         margin-bottom: 1.25em;
+    }
+    /* Section titles */
+    section > h2 {
+        font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        color: #527bbd;
+    }
+
+    /* Dotted leader between title and time */
+    .leader {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: baseline;
+        gap: 0.5rem;
+    }
+    .leader::before {
+        content: "";
+        border-bottom: 1px dotted #d1d5db; /* tailwind gray-300 */
+        margin: 0 0.5rem;
+        height: 0;
     }
 </style>

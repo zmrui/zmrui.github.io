@@ -7,9 +7,41 @@
 <title>Mingrui Zhang</title>
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 <style>
+     
+    body.bg-white {
+        background-color: #eeeeee;
+    }
+
+     
+    main .container {
+        background-color: #ffffff;
+    }
+
+    body {
+        font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    }
     .prose p {
         margin-top: 1.25em;
         margin-bottom: 1.25em;
+    }
+     
+    section > h2 {
+        font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        color: #527bbd;
+    }
+
+     
+    .leader {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: baseline;
+        gap: 0.5rem;
+    }
+    .leader::before {
+        content: "";
+        border-bottom: 1px dotted #d1d5db;  
+        margin: 0 0.5rem;
+        height: 0;
     }
 </style>
 
@@ -59,33 +91,71 @@
         </div>
     </div>
 </section> 
-    
     <section class="mb-8">
     <h2 class="text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2">Education</h2>
     <div class="space-y-4">
         
         <div class="mb-4">
-            <div class="flex justify-between items-center">
+            <div class="flex items-baseline">
                 <h3 class="text-lg font-bold">Ph.D. in Computer Science</h3>
+                <span class="flex-1 border-b border-dotted border-gray-200 mx-2"></span>
                 <p class="text-gray-600">2023 - Present</p>
             </div>
             <p class="text-base text-gray-800">University of Nebraska-Lincoln</p>
         </div>
         
         <div class="mb-4">
-            <div class="flex justify-between items-center">
+            <div class="flex items-baseline">
                 <h3 class="text-lg font-bold">M.S. in Computer Science</h3>
+                <span class="flex-1 border-b border-dotted border-gray-200 mx-2"></span>
                 <p class="text-gray-600">2021 - 2023</p>
             </div>
             <p class="text-base text-gray-800">University of Nebraska-Lincoln</p>
         </div>
         
         <div class="mb-4">
-            <div class="flex justify-between items-center">
+            <div class="flex items-baseline">
                 <h3 class="text-lg font-bold">B.S. in Computer Science</h3>
+                <span class="flex-1 border-b border-dotted border-gray-200 mx-2"></span>
                 <p class="text-gray-600">2016 - 2020</p>
             </div>
             <p class="text-base text-gray-800">Beijing University of Technology</p>
+        </div>
+        
+    </div>
+</section> 
+    <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2">Experience</h2>
+    <div class="space-y-4">
+        
+        <div class="mb-4">
+            <div class="flex items-baseline">
+                <h3 class="text-lg font-bold">Graduate Research Assistant</h3>
+                <span class="flex-1 border-b border-dotted border-gray-200 mx-2"></span>
+                <p class="text-gray-600">2023 - Present</p>
+            </div>
+            <p class="text-base text-gray-800">University of Nebraska – Lincoln</p>
+            <p class="mt-2"></p>
+        </div>
+        
+        <div class="mb-4">
+            <div class="flex items-baseline">
+                <h3 class="text-lg font-bold">Graduate Teaching Assistant</h3>
+                <span class="flex-1 border-b border-dotted border-gray-200 mx-2"></span>
+                <p class="text-gray-600">2022 Spring</p>
+            </div>
+            <p class="text-base text-gray-800">University of Nebraska – Lincoln</p>
+            <p class="mt-2">Data Structures and Algorithms (CSCE 311)</p>
+        </div>
+        
+        <div class="mb-4">
+            <div class="flex items-baseline">
+                <h3 class="text-lg font-bold">Graduate Teaching Assistant</h3>
+                <span class="flex-1 border-b border-dotted border-gray-200 mx-2"></span>
+                <p class="text-gray-600">2022 Fall</p>
+            </div>
+            <p class="text-base text-gray-800">University of Nebraska – Lincoln</p>
+            <p class="mt-2">Data Modeling for Systems Development (CSCE 411/811)</p>
         </div>
         
     </div>
@@ -164,6 +234,44 @@
         
     </div>
 </section> 
+    <section class="mb-8">
+    
+    <h2 class="text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2">Awards</h2>
+    <div class="space-y-4">
+        
+        <div class="mb-4">
+            <div class="flex items-baseline">
+                <h3 class="text-lg font-bold">INFOCOM 2024 Student Travel Grant </h3>
+                <span class="flex-1 border-b border-dotted border-gray-200 mx-2"></span>
+                <p class="text-gray-600">2024</p>
+            </div>
+            <p class="text-base text-gray-800">from NSF</p>
+            
+            <div class="flex space-x-4 mt-2">
+                
+            </div>
+        </div>
+        
+        <div class="mb-4">
+            <div class="flex items-baseline">
+                <h3 class="text-lg font-bold">Nebraska Engineering Recruitment Fellowship</h3>
+                <span class="flex-1 border-b border-dotted border-gray-200 mx-2"></span>
+                <p class="text-gray-600">2023-2025</p>
+            </div>
+            <p class="text-base text-gray-800">from College of Engineering at the University of Nebraska – Lincoln</p>
+            
+            <div class="flex space-x-4 mt-2">
+                
+            </div>
+        </div>
+        
+    </div>
+    
+</section>
+
+
+
+    
     
     
     
