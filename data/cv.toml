@@ -83,6 +83,11 @@ His research interests include networking and software engineering, including ne
   period = "2022 Fall"
   description = "Data Modeling for Systems Development (CSCE 411/811)"
 
+[[experience]]
+  company = "Red Hat (Beijing)"
+  position = "Internship"
+  period = "July 2019"
+  description = "Quality Engineering Intern on Kernel General Group"
 
  [[awards]]
    title = "INFOCOM 2024 Student Travel Grant "
