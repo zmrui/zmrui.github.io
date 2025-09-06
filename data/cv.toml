@@ -30,20 +30,20 @@ His research interests include networking and software engineering, including ne
   title = "Towards Accurate TCP FlightSize Estimation: A History-Aware Learning Approach"
   authors = "**Mingrui Zhang**, Jianlin Zhang"
   publication = "2025 IEEE International Performance, Computing, and Communications Conference (IPCCC)"
-  code_link = "https://github.com/zmrui/FlightSize_Learn"
+  code_link = "https://github.com/zmrui/FlightSizeLearn"
 
 [[publications]]
   title = "Toward Non-Expert Customized Congestion Control"
   authors = "**Mingrui Zhang**, Hamid Bagheri and Lisong Xu"
   publication = "2025 IEEE International Conference on Communications(ICC)"
-  paper_link = "https://github.com/zmrui/NECC/blob/35e81abfa14ad16dbcf92e9b3abd7a61ae56b92c/p3288-zhang.pdf"
+  paper_link = "papers/icc25-p3288-zhang.pdf"
   code_link = "https://github.com/zmrui/NECC"
 
 [[publications]]
   title = "Accuracy Evaluation of TCP FlightSize Estimation: Analytical and Experimental Study"
   authors = "**Mingrui Zhang**, Phuong Ha, Hamid Bagheri and Lisong Xu"
   publication = "2025 International Conference on Computing, Networking and Communications (ICNC)"
-  paper_link = "http://www.conf-icnc.org/2025/papers/p677-zhang.pdf"
+  paper_link = "papers/icnc25-p677-zhang.pdf"
   code_link = "https://github.com/zmrui/FlightSize"
 
 [[publications]]
