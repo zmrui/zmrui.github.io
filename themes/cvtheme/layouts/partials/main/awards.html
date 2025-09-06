@@ -1,5 +1,5 @@
 <section id="awards" class="mb-8">
-    {{ with site.Data.cv.awards }}
+    {{ with .Params.awards }}
     <h2 class="text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2">Awards</h2>
     <div class="space-y-4">
         {{ range . }}

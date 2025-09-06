@@ -1,26 +1,78 @@
-+++
-title = 'Home'
-date = 2023-01-01T08:00:00-07:00
-draft = true
-+++
+---
+title: "Home"
+date: 2023-01-01T08:00:00-07:00
+draft: false
+about:
+  name: "Mingrui Zhang"
+  title: "Ph.D. Student in Computer Science"
+  google_scholar: "https://scholar.google.com/citations?user=s-KRj78AAAAJ&hl=en"
+  github: "https://github.com/zmrui"
+  linkedin: "https://www.linkedin.com/in/mingrui-zhang-30772a328"
+education:
+  - institution: "University of Nebraska-Lincoln"
+    degree: "Ph.D. in Computer Science"
+    period: "2023 - Present"
+  - institution: "University of Nebraska-Lincoln"
+    degree: "M.S. in Computer Science"
+    period: "2021 - 2023"
+  - institution: "Beijing University of Technology"
+    degree: "B.S. in Computer Science"
+    period: "2016 - 2020"
+publications:
+  - title: "Towards Accurate TCP FlightSize Estimation: A History-Aware Learning Approach"
+    authors: "**Mingrui Zhang**, Jianlin Zhang"
+    publication: "2025 IEEE International Performance, Computing, and Communications Conference (IPCCC)"
+    code_link: "https://github.com/zmrui/FlightSize_Learn"
+  - title: "Toward Non-Expert Customized Congestion Control"
+    authors: "**Mingrui Zhang**, Hamid Bagheri and Lisong Xu"
+    publication: "2025 IEEE International Conference on Communications(ICC)"
+    paper_link: "papers/icc25-p3288-zhang.pdf"
+    code_link: "https://github.com/zmrui/NECC"
+  - title: "Accuracy Evaluation of TCP FlightSize Estimation: Analytical and Experimental Study"
+    authors: "**Mingrui Zhang**, Phuong Ha, Hamid Bagheri and Lisong Xu"
+    publication: "2025 International Conference on Computing, Networking and Communications (ICNC)"
+    paper_link: "papers/icnc25-p677-zhang.pdf"
+    code_link: "https://github.com/zmrui/FlightSize"
+  - title: "Scalable Verification of Multi-ACK Properties in Loss-Based Congestion Control Implementations"
+    authors: "Minh Vu, Hamid Bagheri, Lisong Xu, Wei Sun and **Mingrui Zhang**"
+    publication: "2024 IEEE 32nd International Conference on Network Protocols (ICNP)"
+    code_link: "https://github.com/verifiabletcp/asm"
+    code_link2: "https://github.com/zmrui/tcp_cubic_fix"
+  - title: "Experimental Study of Linux Flightsize Estimation"
+    authors: "**Mingrui Zhang**"
+    publication: "Master's Thesis"
+  - title: "Symbolic ns-3 for Efficient Exhaustive Testing: Design, Implementation, and Simulations"
+    authors: "Jianfei Shao, Minh Vu, **Mingrui Zhang**, Asmita Jayswal and Lisong Xu"
+    publication: "2022 Workshop on ns-3"
+  - title: "User-Perceived Latency to Measure CCAs"
+    authors: "**Mingrui Zhang**, Vidhi Goel, Lisong Xu"
+    publication: "2021 Internet Architecture Board, Workshop: Measuring Network Quality for End-Users"
+    paper_link: "https://datatracker.ietf.org/meeting/interim-2021-mnqeuws-03/materials/slides-interim-2021-mnqeuws-03-sessa-mingrui-zhang-vidhi-goel-lisong-xu-user-perceived-latency-to-measure-ccas-00"
+experience:
+  - company: "University of Nebraska – Lincoln"
+    position: "Graduate Research Assistant"
+    period: "2023 - Present"
+  - company: "University of Nebraska – Lincoln"
+    position: "Graduate Teaching Assistant"
+    period: "2022 Spring"
+    description: "Data Structures and Algorithms (CSCE 311)"
+  - company: "University of Nebraska – Lincoln"
+    position: "Graduate Teaching Assistant"
+    period: "2022 Fall"
+    description: "Data Modeling for Systems Development (CSCE 411/811)"
+  - company: "Red Hat (Beijing)"
+    position: "Internship"
+    period: "July 2019"
+    description: "Quality Engineering Intern on Kernel General Group"
+awards:
+  - title: "INFOCOM 2024 Student Travel Grant "
+    organization: "from NSF"
+    period: "2024"
+  - title: "Nebraska Engineering Recruitment Fellowship"
+    organization: "from College of Engineering at the University of Nebraska – Lincoln"
+    period: "2023-2025"
+---
 
 Mingrui Zhang is currently a Ph.D. Student in the School of Computing, University of Nebraska-Lincoln, under the supervision of Prof. Lisong Xu. Co-supervised by Prof. Hamid Bagheri.
 
 His research interests include networking and software engineering, including network protocols, TCP congestion control, and formal methods.
-
-
-Education
-Ph.D. in Computer Science
-2023 - Present
-
-University of Nebraska-Lincoln
-
-M.S. in Computer Science
-2021 - 2023
-
-University of Nebraska-Lincoln
-
-B.S. in Computer Science
-2016 - 2020
-
-Beijing University of Technology
