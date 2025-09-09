@@ -28,6 +28,7 @@ publications:
     publication: "2025 IEEE International Conference on Communications(ICC)"
     paper_link: "papers/icc25-p3288-zhang.pdf"
     code_link: "https://github.com/zmrui/NECC"
+    slides_link: "https://1drv.ms/p/c/0784c022e5be95a1/EXWORrNOP2NCnlTdhFCfcUkB2kyzc2DCrHx57vxoiZYdsg?e=SA15IP"
   - title: "Accuracy Evaluation of TCP FlightSize Estimation: Analytical and Experimental Study"
     authors: "**Mingrui Zhang**, Phuong Ha, Hamid Bagheri and Lisong Xu"
     publication: "2025 International Conference on Computing, Networking and Communications (ICNC)"
