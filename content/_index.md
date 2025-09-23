@@ -23,6 +23,7 @@ publications:
     authors: "**Mingrui Zhang**, Jianlin Zhang"
     publication: "2025 IEEE International Performance, Computing, and Communications Conference (IPCCC)"
     code_link: "https://github.com/zmrui/FlightSize_Learn"
+    paper_link: "papers/ipccc25-zhang.pdf"
   - title: "Toward Non-Expert Customized Congestion Control"
     authors: "**Mingrui Zhang**, Hamid Bagheri and Lisong Xu"
     publication: "2025 IEEE International Conference on Communications(ICC)"
