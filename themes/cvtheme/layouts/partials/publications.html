@@ -10,6 +10,9 @@
                 {{ with .paper_link }}
                 <a href="{{ . | relURL }}" class="text-blue-500 hover:underline">[Paper]</a>
                 {{ end }}
+                {{ with .page_link }}
+                <a href="{{ . }}" class="text-blue-500 hover:underline">[Page]</a>
+                {{ end }}
                 {{ with .code_link }}
                 <a href="{{ . }}" class="text-blue-500 hover:underline">[Code]</a>
                 {{ end }}
