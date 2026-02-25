@@ -78,6 +78,9 @@ service:
   - role: "Reviewer"
     organization: "Computer Communications - Elsevier"
     period: "2026"
+  - role: "Reviewer"
+    organization: "IEEE Open Journal of the Communications Society"
+    period: "2026"
   
 ---
 
