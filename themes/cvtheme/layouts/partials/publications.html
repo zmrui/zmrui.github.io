@@ -1,29 +1,29 @@
-<section id="publications" class="mb-8">
-    <h2 class="text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2">Publications</h2>
-    <div class="space-y-4">
+<section id="publications" class="cv-section">
+    <h2 class="cv-section-title">Publications</h2>
+    <div class="cv-list">
         {{ range .Params.publications }}
-        <div class="mb-4">
-            <h3 class="text-lg font-bold">{{ .title }}</h3>
-            <p class="text-gray-800">{{ .authors | markdownify }}</p>
-            <p class="text-gray-600"><em>{{ .publication }}</em></p>
-            <div class="flex space-x-4 mt-2">
+        <article class="cv-entry">
+            <h3 class="cv-publication-title">{{ .title }}</h3>
+            <p class="cv-publication-authors">{{ .authors | markdownify }}</p>
+            <p class="cv-publication-venue"><em>{{ .publication }}</em></p>
+            <div class="cv-link-row">
                 {{ with .paper_link }}
-                <a href="{{ . | relURL }}" class="text-blue-500 hover:underline">[Paper]</a>
+                <a href="{{ . | relURL }}" class="cv-link-chip">Paper</a>
                 {{ end }}
                 {{ with .page_link }}
-                <a href="{{ . }}" class="text-blue-500 hover:underline">[Page]</a>
+                <a href="{{ . }}" class="cv-link-chip">Page</a>
                 {{ end }}
                 {{ with .code_link }}
-                <a href="{{ . }}" class="text-blue-500 hover:underline">[Code]</a>
+                <a href="{{ . }}" class="cv-link-chip">Code</a>
                 {{ end }}
                 {{ with .code_link2 }}
-                <a href="{{ . }}" class="text-blue-500 hover:underline">[Code2]</a>
+                <a href="{{ . }}" class="cv-link-chip">Code 2</a>
                 {{ end }}
                 {{ with .slides_link }}
-                <a href="{{ . }}" class="text-blue-500 hover:underline">[Slides]</a>
+                <a href="{{ . }}" class="cv-link-chip">Slides</a>
                 {{ end }}
             </div>
-        </div>
+        </article>
         {{ end }}
     </div>
-</section> 
+</section>

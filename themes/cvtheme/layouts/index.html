@@ -1,13 +1,17 @@
 {{ define "main" }}
-<div class="container mx-auto px-4 py-8 max-w-4xl">
-    {{ partial "about.html" . }}
-    {{ partial "education.html" . }}
-    {{ partial "experience.html" . }}
-    {{ partial "publications.html" . }}
-    {{ partial "service.html" . }}
-    {{ partial "awards.html" . }}
-    <!-- {{ partial "skills.html" . }} -->
-    <!-- {{ partial "projects.html" . }} -->
-    <!-- {{ partial "references.html" . }} -->
+<div class="cv-page-shell">
+    <div class="cv-main-wrap">
+        <div class="cv-stack">
+            {{ partial "about.html" . }}
+            {{ partial "education.html" . }}
+            {{ partial "experience.html" . }}
+            {{ partial "publications.html" . }}
+            {{ partial "service.html" . }}
+            {{ partial "awards.html" . }}
+            <!-- {{ partial "skills.html" . }} -->
+            <!-- {{ partial "projects.html" . }} -->
+            <!-- {{ partial "references.html" . }} -->
+        </div>
+    </div>
 </div>
-{{ end }} 
+{{ end }}

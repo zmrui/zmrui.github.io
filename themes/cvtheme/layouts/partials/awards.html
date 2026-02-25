@@ -1,23 +1,25 @@
-<section id="awards" class="mb-8">
-    {{ with .Params.awards }}
-    <h2 class="text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2">Awards</h2>
-    <div class="space-y-4">
+{{ with .Params.awards }}
+<section id="awards" class="cv-section">
+    <h2 class="cv-section-title">Awards</h2>
+    <div class="cv-list">
         {{ range . }}
-        <div class="mb-4">
-            <div class="flex items-baseline">
-                <h3 class="text-lg font-bold">{{ .title }}</h3>
-                <span class="flex-1 border-b border-dotted border-gray-200 mx-2"></span>
-                {{ with .period }}<p class="text-gray-600">{{ . }}</p>{{ end }}
+        <article class="cv-entry">
+            <div class="cv-entry-head">
+                <h3 class="cv-entry-title">{{ .title }}</h3>
+                <span class="cv-entry-rule"></span>
+                {{ with .period }}<p class="cv-entry-period">{{ . }}</p>{{ end }}
             </div>
-            {{ with .organization }}<p class="text-base text-gray-800">{{ . }}</p>{{ end }}
-            {{ with .description }}<p class="mt-2">{{ . }}</p>{{ end }}
-            <div class="flex space-x-4 mt-2">
-                {{ with .link }}<a href="{{ . }}" class="text-blue-500 hover:underline">[Link]</a>{{ end }}
+            {{ with .organization }}<p class="cv-entry-meta">{{ . }}</p>{{ end }}
+            {{ with .description }}<p class="cv-entry-description">{{ . }}</p>{{ end }}
+            {{ with .link }}
+            <div class="cv-link-row">
+                <a href="{{ . }}" class="cv-link-chip">Link</a>
             </div>
-        </div>
+            {{ end }}
+        </article>
         {{ end }}
     </div>
-    {{ end }}
 </section>
+{{ end }}
 
 

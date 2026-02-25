@@ -8,7 +8,11 @@ module.exports = {
     "./assets/**/*.{js,ts,vue,jsx,tsx,html}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        lg: "1664px",
+      },
+    },
   },
   plugins: [],
 };

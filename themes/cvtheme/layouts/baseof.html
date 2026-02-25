@@ -3,16 +3,18 @@
 <head>
     {{ partial "head.html" . }}
 </head>
-<body class="bg-white text-gray-800">
+<body class="{{ if .IsHome }}cv-page-body{{ else }}bg-white text-gray-800{{ end }}">
     <div id="top" class="flex flex-col min-h-screen">
         <!-- <header>
             {{ partial "header.html" . }}
         </header> -->
-        <main class="flex-grow">
+        <main class="flex-grow {{ if .IsHome }}cv-main{{ end }}">
+            {{ if .IsHome }}
             {{ partial "outline.html" . }}
+            {{ end }}
             {{ block "main" . }}{{ end }}
         </main>
-        <footer class="bg-gray-800 text-white p-4">
+        <footer class="{{ if .IsHome }}cv-site-footer{{ else }}bg-gray-800 text-white p-4{{ end }}">
             {{ partial "footer.html" . }}
         </footer>
     </div>

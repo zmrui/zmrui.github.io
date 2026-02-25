@@ -1,94 +1,57 @@
-<!-- Table of Contents / Outline -->
-<nav class="fixed top-4 right-4 bg-white border border-gray-300 rounded-lg shadow-lg p-4 max-w-xs z-50 hidden lg:block">
-    <ul class="space-y-2">
-        <li>
-            <a href="#about" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200">
-                About
-            </a>
-        </li>
-        <li>
-            <a href="#education" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200">
-                Education
-            </a>
-        </li>
-        <li>
-            <a href="#experience" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200">
-                Experience
-            </a>
-        </li>
-        <li>
-            <a href="#publications" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200">
-                Publications
-            </a>
-        </li>
+<!-- Desktop floating card -->
+<aside class="cv-float-card fixed top-1/2 z-50 hidden -translate-y-1/2 lg:block" aria-label="About card and section navigation">
+    <p class="cv-outline-title">About</p>
+    <h3 class="cv-float-name">{{ .Params.about.name }}</h3>
+    <p class="cv-float-role">{{ .Params.about.title }}</p>
+    <div class="cv-float-contact">
+        <a href="#about" class="cv-outline-link">View About</a>
+        {{ with .Params.about.email }}
+        <a href="mailto:{{ . }}" class="cv-float-meta">{{ . }}</a>
+        {{ end }}
+    </div>
+    <div class="cv-float-divider"></div>
+    <p class="cv-outline-title">Sections</p>
+    <ul class="cv-outline-list">
+        <li><a href="#education" class="cv-outline-link">Education</a></li>
+        <li><a href="#experience" class="cv-outline-link">Experience</a></li>
+        <li><a href="#publications" class="cv-outline-link">Publications</a></li>
         {{ with .Params.service }}
-        <li>
-            <a href="#service" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200">
-                Service
-            </a>
-        </li>
+        <li><a href="#service" class="cv-outline-link">Service</a></li>
         {{ end }}
         {{ with .Params.awards }}
-        <li>
-            <a href="#awards" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200">
-                Awards
-            </a>
-        </li>
+        <li><a href="#awards" class="cv-outline-link">Awards</a></li>
         {{ end }}
     </ul>
-</nav>
+</aside>
 
 <!-- Mobile toggle button -->
-<button id="outline-toggle" class="lg:hidden fixed top-4 right-4 bg-blue-600 text-white p-2 rounded-full shadow-lg z-50">
-    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<button id="outline-toggle" class="cv-outline-toggle fixed top-4 right-4 z-50 lg:hidden" type="button" aria-label="Open section menu">
+    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
     </svg>
 </button>
 
 <!-- Mobile outline overlay -->
-<div id="mobile-outline" class="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-40 hidden">
-    <div class="fixed top-4 right-4 bg-white border border-gray-300 rounded-lg shadow-lg p-4 max-w-xs">
-        <div class="flex justify-end mb-3">
-            <button id="outline-close" class="text-gray-500 hover:text-gray-700">
-                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<div id="mobile-outline" class="cv-outline-overlay fixed inset-0 z-40 hidden lg:hidden">
+    <div class="fixed top-4 right-4 cv-mobile-panel">
+        <div class="mb-3 flex items-center justify-between">
+            <p class="cv-outline-title mb-0">Sections</p>
+            <button id="outline-close" class="cv-mobile-close" type="button" aria-label="Close section menu">
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
             </button>
         </div>
-        <ul class="space-y-2">
-            <li>
-                <a href="#about" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200 outline-link">
-                    About
-                </a>
-            </li>
-            <li>
-                <a href="#education" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200 outline-link">
-                    Education
-                </a>
-            </li>
-            <li>
-                <a href="#experience" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200 outline-link">
-                    Experience
-                </a>
-            </li>
-            <li>
-                <a href="#publications" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200 outline-link">
-                    Publications
-                </a>
-            </li>
+        <ul class="cv-outline-list">
+            <li><a href="#about" class="cv-outline-link">About</a></li>
+            <li><a href="#education" class="cv-outline-link">Education</a></li>
+            <li><a href="#experience" class="cv-outline-link">Experience</a></li>
+            <li><a href="#publications" class="cv-outline-link">Publications</a></li>
             {{ with .Params.service }}
-            <li>
-                <a href="#service" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200 outline-link">
-                    Service
-                </a>
-            </li>
+            <li><a href="#service" class="cv-outline-link">Service</a></li>
             {{ end }}
             {{ with .Params.awards }}
-            <li>
-                <a href="#awards" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200 outline-link">
-                    Awards
-                </a>
-            </li>
+            <li><a href="#awards" class="cv-outline-link">Awards</a></li>
             {{ end }}
         </ul>
     </div>

@@ -16,408 +16,386 @@
 
 
 </head>
-<body class="bg-white text-gray-800">
+<body class="cv-page-body">
     <div id="top" class="flex flex-col min-h-screen">
         
-        <main class="flex-grow">
+        <main class="flex-grow cv-main">
             
-<nav class="fixed top-4 right-4 bg-white border border-gray-300 rounded-lg shadow-lg p-4 max-w-xs z-50 hidden lg:block">
-    <ul class="space-y-2">
-        <li>
-            <a href="#about" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200">
-                About
-            </a>
-        </li>
-        <li>
-            <a href="#education" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200">
-                Education
-            </a>
-        </li>
-        <li>
-            <a href="#experience" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200">
-                Experience
-            </a>
-        </li>
-        <li>
-            <a href="#publications" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200">
-                Publications
-            </a>
-        </li>
+            
+<aside class="cv-float-card fixed top-1/2 z-50 hidden -translate-y-1/2 lg:block" aria-label="About card and section navigation">
+    <p class="cv-outline-title">About</p>
+    <h3 class="cv-float-name">Mingrui Zhang</h3>
+    <p class="cv-float-role">Ph.D. Student in Computer Science</p>
+    <div class="cv-float-contact">
+        <a href="#about" class="cv-outline-link">View About</a>
         
-        <li>
-            <a href="#service" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200">
-                Service
-            </a>
-        </li>
+    </div>
+    <div class="cv-float-divider"></div>
+    <p class="cv-outline-title">Sections</p>
+    <ul class="cv-outline-list">
+        <li><a href="#education" class="cv-outline-link">Education</a></li>
+        <li><a href="#experience" class="cv-outline-link">Experience</a></li>
+        <li><a href="#publications" class="cv-outline-link">Publications</a></li>
+        
+        <li><a href="#service" class="cv-outline-link">Service</a></li>
         
         
-        <li>
-            <a href="#awards" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200">
-                Awards
-            </a>
-        </li>
+        <li><a href="#awards" class="cv-outline-link">Awards</a></li>
         
     </ul>
-</nav>
+</aside>
 
 
-<button id="outline-toggle" class="lg:hidden fixed top-4 right-4 bg-blue-600 text-white p-2 rounded-full shadow-lg z-50">
-    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<button id="outline-toggle" class="cv-outline-toggle fixed top-4 right-4 z-50 lg:hidden" type="button" aria-label="Open section menu">
+    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
     </svg>
 </button>
 
 
-<div id="mobile-outline" class="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-40 hidden">
-    <div class="fixed top-4 right-4 bg-white border border-gray-300 rounded-lg shadow-lg p-4 max-w-xs">
-        <div class="flex justify-end mb-3">
-            <button id="outline-close" class="text-gray-500 hover:text-gray-700">
-                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<div id="mobile-outline" class="cv-outline-overlay fixed inset-0 z-40 hidden lg:hidden">
+    <div class="fixed top-4 right-4 cv-mobile-panel">
+        <div class="mb-3 flex items-center justify-between">
+            <p class="cv-outline-title mb-0">Sections</p>
+            <button id="outline-close" class="cv-mobile-close" type="button" aria-label="Close section menu">
+                <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
             </button>
         </div>
-        <ul class="space-y-2">
-            <li>
-                <a href="#about" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200 outline-link">
-                    About
-                </a>
-            </li>
-            <li>
-                <a href="#education" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200 outline-link">
-                    Education
-                </a>
-            </li>
-            <li>
-                <a href="#experience" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200 outline-link">
-                    Experience
-                </a>
-            </li>
-            <li>
-                <a href="#publications" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200 outline-link">
-                    Publications
-                </a>
-            </li>
+        <ul class="cv-outline-list">
+            <li><a href="#about" class="cv-outline-link">About</a></li>
+            <li><a href="#education" class="cv-outline-link">Education</a></li>
+            <li><a href="#experience" class="cv-outline-link">Experience</a></li>
+            <li><a href="#publications" class="cv-outline-link">Publications</a></li>
             
-            <li>
-                <a href="#service" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200 outline-link">
-                    Service
-                </a>
-            </li>
+            <li><a href="#service" class="cv-outline-link">Service</a></li>
             
             
-            <li>
-                <a href="#awards" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200 outline-link">
-                    Awards
-                </a>
-            </li>
+            <li><a href="#awards" class="cv-outline-link">Awards</a></li>
             
         </ul>
     </div>
 </div>
 
             
-<div class="container mx-auto px-4 py-8 max-w-4xl">
-    <section id="about" class="mb-8">
-    <div>
-        <h3 class="text-xl font-bold">Mingrui Zhang</h3>
-        <p class="text-lg text-gray-600">Ph.D. Student in Computer Science</p>
-        <div class="flex space-x-4 mt-2">
             
-            
+<div class="cv-page-shell">
+    <div class="cv-main-wrap">
+        <div class="cv-stack">
+            <section id="about" class="cv-section">
+    <div class="cv-hero">
+        <p class="cv-kicker">Curriculum Vitae</p>
+        <h1 class="cv-name">Mingrui Zhang</h1>
+        <p class="cv-subtitle">Ph.D. Student in Computer Science</p>
+        <div class="cv-chip-row">
             
             
             
         </div>
-        <div class="flex space-x-4 mt-4">
+        <div class="cv-social-row">
             
-            <a href="https://scholar.google.com/citations?user=s-KRj78AAAAJ&amp;hl=en" class="text-gray-500 hover:text-blue-500">
-                <svg width="24" height="24" viewBox="0 0 24 24" role="img" xmlns="http://www.w.org/2000/svg"><title>Google Scholar icon</title><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg>
+            <a href="https://scholar.google.com/citations?user=s-KRj78AAAAJ&amp;hl=en" class="cv-icon-link" aria-label="Google Scholar" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                    <title>Google Scholar icon</title>
+                    <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/>
+                </svg>
             </a>
             
             
-            <a href="https://github.com/zmrui" class="text-gray-500 hover:text-blue-500">
-                <svg fill="#000000" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"/></svg>
+            <a href="https://github.com/zmrui" class="cv-icon-link" aria-label="GitHub" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                    <path d="M12 2.247A10 10 0 0 0 8.838 21.734c.5.088.688-.212.688-.475 0-.238-.013-1.025-.013-1.862-2.512.462-3.163-.613-3.363-1.175a3.636 3.636 0 0 0-1.025-1.413c-.35-.188-.85-.65-.013-.662a2.001 2.001 0 0 1 1.538 1.025 2.137 2.137 0 0 0 2.913.825 2.104 2.104 0 0 1 .638-1.338c-2.225-.25-4.55-1.113-4.55-4.938a3.892 3.892 0 0 1 1.025-2.687 3.594 3.594 0 0 1 .1-2.65s.837-.263 2.75 1.025a9.427 9.427 0 0 1 5 0c1.912-1.3 2.75-1.025 2.75-1.025a3.593 3.593 0 0 1 .1 2.65 3.869 3.869 0 0 1 1.025 2.687c0 3.838-2.337 4.688-4.563 4.938a2.368 2.368 0 0 1 .675 1.85c0 1.338-.012 2.413-.012 2.75 0 .263.188.575.688.475A10.005 10.005 0 0 0 12 2.247z"/>
+                </svg>
             </a>
             
             
-            <a href="https://www.linkedin.com/in/mingrui-zhang-30772a328" class="text-gray-500 hover:text-blue-500">
-                <svg fill="#000000" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="M20.47,2H3.53A1.45,1.45,0,0,0,2.06,3.43V20.57A1.45,1.45,0,0,0,3.53,22H20.47a1.45,1.45,0,0,0,1.47-1.43V3.43A1.45,1.45,0,0,0,20.47,2ZM8.09,18.74h-3v-9h3ZM6.59,8.48h0a1.56,1.56,0,1,1,0-3.12,1.57,1.57,0,1,1,0,3.12ZM18.91,18.74h-3V13.91c0-1.21-.43-2-1.52-2A1.65,1.65,0,0,0,12.85,13a2,2,0,0,0-.1.73v5h-3s0-8.18,0-9h3V11A3,3,0,0,1,15.46,9.5c2,0,3.45,1.29,3.45,4.06Z"/></svg>
+            <a href="https://www.linkedin.com/in/mingrui-zhang-30772a328" class="cv-icon-link" aria-label="LinkedIn" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                    <path d="M20.47 2H3.53a1.45 1.45 0 0 0-1.47 1.43v17.14A1.45 1.45 0 0 0 3.53 22h16.94a1.45 1.45 0 0 0 1.47-1.43V3.43A1.45 1.45 0 0 0 20.47 2zM8.09 18.74h-3v-9h3zm-1.5-10.26a1.56 1.56 0 1 1 0-3.12 1.57 1.57 0 1 1 0 3.12zm12.32 10.26h-3v-4.83c0-1.21-.43-2-1.52-2a1.65 1.65 0 0 0-1.54 1.09 2 2 0 0 0-.1.73v5h-3v-9h3V11a3 3 0 0 1 2.71-1.5c2 0 3.45 1.29 3.45 4.06z"/>
+                </svg>
             </a>
             
             
-            <a href="https://orcid.org/0009-0003-7938-0359" class="text-gray-500 hover:text-blue-500" aria-label="ORCID">
-                <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID" width="24" height="24" class="w-6 h-6">
+            <a href="https://orcid.org/0009-0003-7938-0359" class="cv-icon-link" aria-label="ORCID" rel="noopener noreferrer">
+                <img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID">
             </a>
             
         </div>
-        <div class="mt-4 prose max-w-none">
+        <div class="cv-prose">
             <p>Mingrui Zhang is currently a Ph.D. Student in the School of Computing, University of Nebraska-Lincoln, under the supervision of Prof. Lisong Xu. Co-supervised by Prof. Hamid Bagheri.</p>
 <p>His research interests include networking and software engineering, including network protocols, TCP congestion control, and formal methods.</p>
 
         </div>
     </div>
-</section> 
+</section>
 
-    <section id="education" class="mb-8">
-    <h2 class="text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2">Education</h2>
-    <div class="space-y-4">
+            <section id="education" class="cv-section">
+    <h2 class="cv-section-title">Education</h2>
+    <div class="cv-list">
         
-        <div class="mb-4">
-            <div class="flex items-baseline">
-                <h3 class="text-lg font-bold">Ph.D. in Computer Science</h3>
-                <span class="flex-1 border-b border-dotted border-gray-200 mx-2"></span>
-                <p class="text-gray-600">2023 - Present</p>
+        <article class="cv-entry">
+            <div class="cv-entry-head">
+                <h3 class="cv-entry-title">Ph.D. in Computer Science</h3>
+                <span class="cv-entry-rule"></span>
+                <p class="cv-entry-period">2023 - Present</p>
             </div>
-            <p class="text-base text-gray-800">University of Nebraska-Lincoln</p>
-        </div>
+            <p class="cv-entry-meta">University of Nebraska-Lincoln</p>
+        </article>
         
-        <div class="mb-4">
-            <div class="flex items-baseline">
-                <h3 class="text-lg font-bold">M.S. in Computer Science</h3>
-                <span class="flex-1 border-b border-dotted border-gray-200 mx-2"></span>
-                <p class="text-gray-600">2021 - 2023</p>
+        <article class="cv-entry">
+            <div class="cv-entry-head">
+                <h3 class="cv-entry-title">M.S. in Computer Science</h3>
+                <span class="cv-entry-rule"></span>
+                <p class="cv-entry-period">2021 - 2023</p>
             </div>
-            <p class="text-base text-gray-800">University of Nebraska-Lincoln</p>
-        </div>
+            <p class="cv-entry-meta">University of Nebraska-Lincoln</p>
+        </article>
         
-        <div class="mb-4">
-            <div class="flex items-baseline">
-                <h3 class="text-lg font-bold">B.S. in Computer Science</h3>
-                <span class="flex-1 border-b border-dotted border-gray-200 mx-2"></span>
-                <p class="text-gray-600">2016 - 2020</p>
+        <article class="cv-entry">
+            <div class="cv-entry-head">
+                <h3 class="cv-entry-title">B.S. in Computer Science</h3>
+                <span class="cv-entry-rule"></span>
+                <p class="cv-entry-period">2016 - 2020</p>
             </div>
-            <p class="text-base text-gray-800">Beijing University of Technology</p>
-        </div>
+            <p class="cv-entry-meta">Beijing University of Technology</p>
+        </article>
         
     </div>
-</section> 
-    <section id="experience" class="mb-8">
-    <h2 class="text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2">Experience</h2>
-    <div class="space-y-4">
+</section>
+
+            <section id="experience" class="cv-section">
+    <h2 class="cv-section-title">Experience</h2>
+    <div class="cv-list">
         
-        <div class="mb-4">
-            <div class="flex items-baseline">
-                <h3 class="text-lg font-bold">Graduate Research Assistant</h3>
-                <span class="flex-1 border-b border-dotted border-gray-200 mx-2"></span>
-                <p class="text-gray-600">2023 - Present</p>
+        <article class="cv-entry">
+            <div class="cv-entry-head">
+                <h3 class="cv-entry-title">Graduate Research Assistant</h3>
+                <span class="cv-entry-rule"></span>
+                <p class="cv-entry-period">2023 - Present</p>
             </div>
-            <p class="text-base text-gray-800">University of Nebraska – Lincoln</p>
-            <p class="mt-2"></p>
-        </div>
-        
-        <div class="mb-4">
-            <div class="flex items-baseline">
-                <h3 class="text-lg font-bold">Graduate Teaching Assistant</h3>
-                <span class="flex-1 border-b border-dotted border-gray-200 mx-2"></span>
-                <p class="text-gray-600">2022 Spring</p>
-            </div>
-            <p class="text-base text-gray-800">University of Nebraska – Lincoln</p>
-            <p class="mt-2">Data Structures and Algorithms (CSCE 311)</p>
-        </div>
-        
-        <div class="mb-4">
-            <div class="flex items-baseline">
-                <h3 class="text-lg font-bold">Graduate Teaching Assistant</h3>
-                <span class="flex-1 border-b border-dotted border-gray-200 mx-2"></span>
-                <p class="text-gray-600">2022 Fall</p>
-            </div>
-            <p class="text-base text-gray-800">University of Nebraska – Lincoln</p>
-            <p class="mt-2">Data Modeling for Systems Development (CSCE 411/811)</p>
-        </div>
-        
-        <div class="mb-4">
-            <div class="flex items-baseline">
-                <h3 class="text-lg font-bold">Internship</h3>
-                <span class="flex-1 border-b border-dotted border-gray-200 mx-2"></span>
-                <p class="text-gray-600">July 2019</p>
-            </div>
-            <p class="text-base text-gray-800">Red Hat (Beijing)</p>
-            <p class="mt-2">Quality Engineering Intern on Kernel General Group</p>
-        </div>
-        
-    </div>
-</section> 
-    <section id="publications" class="mb-8">
-    <h2 class="text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2">Publications</h2>
-    <div class="space-y-4">
-        
-        <div class="mb-4">
-            <h3 class="text-lg font-bold">Towards Accurate TCP FlightSize Estimation: A History-Aware Learning Approach</h3>
-            <p class="text-gray-800"><strong>Mingrui Zhang</strong>, Jianlin Zhang</p>
-            <p class="text-gray-600"><em>2025 IEEE International Performance, Computing, and Communications Conference (IPCCC)</em></p>
-            <div class="flex space-x-4 mt-2">
-                
-                
-                
-                <a href="https://github.com/zmrui/FlightSizeLearn" class="text-blue-500 hover:underline">[Code]</a>
-                
-                
-                
-            </div>
-        </div>
-        
-        <div class="mb-4">
-            <h3 class="text-lg font-bold">Toward Non-Expert Customized Congestion Control</h3>
-            <p class="text-gray-800"><strong>Mingrui Zhang</strong>, Hamid Bagheri and Lisong Xu</p>
-            <p class="text-gray-600"><em>2025 IEEE International Conference on Communications(ICC)</em></p>
-            <div class="flex space-x-4 mt-2">
-                
-                
-                <a href="https://zmrui.github.io/NECC/" class="text-blue-500 hover:underline">[Page]</a>
-                
-                
-                <a href="https://github.com/zmrui/NECC" class="text-blue-500 hover:underline">[Code]</a>
-                
-                
-                
-                <a href="https://1drv.ms/p/c/0784c022e5be95a1/EXWORrNOP2NCnlTdhFCfcUkB2kyzc2DCrHx57vxoiZYdsg?e=SA15IP" class="text-blue-500 hover:underline">[Slides]</a>
-                
-            </div>
-        </div>
-        
-        <div class="mb-4">
-            <h3 class="text-lg font-bold">Accuracy Evaluation of TCP FlightSize Estimation: Analytical and Experimental Study</h3>
-            <p class="text-gray-800"><strong>Mingrui Zhang</strong>, Phuong Ha, Hamid Bagheri and Lisong Xu</p>
-            <p class="text-gray-600"><em>2025 International Conference on Computing, Networking and Communications (ICNC)</em></p>
-            <div class="flex space-x-4 mt-2">
-                
-                
-                
-                <a href="https://github.com/zmrui/FlightSize" class="text-blue-500 hover:underline">[Code]</a>
-                
-                
-                
-            </div>
-        </div>
-        
-        <div class="mb-4">
-            <h3 class="text-lg font-bold">Scalable Verification of Multi-ACK Properties in Loss-Based Congestion Control Implementations</h3>
-            <p class="text-gray-800">Minh Vu, Hamid Bagheri, Lisong Xu, Wei Sun and <strong>Mingrui Zhang</strong></p>
-            <p class="text-gray-600"><em>2024 IEEE 32nd International Conference on Network Protocols (ICNP)</em></p>
-            <div class="flex space-x-4 mt-2">
-                
-                
-                
-                <a href="https://github.com/verifiabletcp/asm" class="text-blue-500 hover:underline">[Code]</a>
-                
-                
-                <a href="https://github.com/zmrui/tcp_cubic_fix" class="text-blue-500 hover:underline">[Code2]</a>
-                
-                
-            </div>
-        </div>
-        
-        <div class="mb-4">
-            <h3 class="text-lg font-bold">Experimental Study of Linux Flightsize Estimation</h3>
-            <p class="text-gray-800"><strong>Mingrui Zhang</strong></p>
-            <p class="text-gray-600"><em>Master&#39;s Thesis</em></p>
-            <div class="flex space-x-4 mt-2">
-                
-                <a href="https://digitalcommons.unl.edu/computerscidiss/233/" class="text-blue-500 hover:underline">[Paper]</a>
-                
-                
-                
-                
-                
-            </div>
-        </div>
-        
-        <div class="mb-4">
-            <h3 class="text-lg font-bold">Symbolic ns-3 for Efficient Exhaustive Testing: Design, Implementation, and Simulations</h3>
-            <p class="text-gray-800">Jianfei Shao, Minh Vu, <strong>Mingrui Zhang</strong>, Asmita Jayswal and Lisong Xu</p>
-            <p class="text-gray-600"><em>2022 Workshop on ns-3</em></p>
-            <div class="flex space-x-4 mt-2">
-                
-                
-                
-                
-                
-            </div>
-        </div>
-        
-        <div class="mb-4">
-            <h3 class="text-lg font-bold">User-Perceived Latency to Measure CCAs</h3>
-            <p class="text-gray-800"><strong>Mingrui Zhang</strong>, Vidhi Goel, Lisong Xu</p>
-            <p class="text-gray-600"><em>2021 Internet Architecture Board, Workshop: Measuring Network Quality for End-Users</em></p>
-            <div class="flex space-x-4 mt-2">
-                
-                <a href="https://datatracker.ietf.org/meeting/interim-2021-mnqeuws-03/materials/slides-interim-2021-mnqeuws-03-sessa-mingrui-zhang-vidhi-goel-lisong-xu-user-perceived-latency-to-measure-ccas-00" class="text-blue-500 hover:underline">[Paper]</a>
-                
-                
-                
-                
-                
-            </div>
-        </div>
-        
-    </div>
-</section> 
-    <section id="service" class="mb-8">
-    
-    <h2 class="text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2">Service</h2>
-    <div class="space-y-4">
-        
-        <div class="mb-4">
-            <div class="flex items-baseline">
-                <h3 class="text-lg font-bold">Reviewer</h3>
-                <span class="flex-1 border-b border-dotted border-gray-200 mx-2"></span>
-                <p class="text-gray-600">2026</p>
-            </div>
-            <p class="text-base text-gray-800">Computer Communications - Elsevier</p>
+            <p class="cv-entry-meta">University of Nebraska – Lincoln</p>
             
-        </div>
+        </article>
+        
+        <article class="cv-entry">
+            <div class="cv-entry-head">
+                <h3 class="cv-entry-title">Graduate Teaching Assistant</h3>
+                <span class="cv-entry-rule"></span>
+                <p class="cv-entry-period">2022 Spring</p>
+            </div>
+            <p class="cv-entry-meta">University of Nebraska – Lincoln</p>
+            
+            <p class="cv-entry-description">Data Structures and Algorithms (CSCE 311)</p>
+            
+        </article>
+        
+        <article class="cv-entry">
+            <div class="cv-entry-head">
+                <h3 class="cv-entry-title">Graduate Teaching Assistant</h3>
+                <span class="cv-entry-rule"></span>
+                <p class="cv-entry-period">2022 Fall</p>
+            </div>
+            <p class="cv-entry-meta">University of Nebraska – Lincoln</p>
+            
+            <p class="cv-entry-description">Data Modeling for Systems Development (CSCE 411/811)</p>
+            
+        </article>
+        
+        <article class="cv-entry">
+            <div class="cv-entry-head">
+                <h3 class="cv-entry-title">Internship</h3>
+                <span class="cv-entry-rule"></span>
+                <p class="cv-entry-period">July 2019</p>
+            </div>
+            <p class="cv-entry-meta">Red Hat (Beijing)</p>
+            
+            <p class="cv-entry-description">Quality Engineering Intern on Kernel General Group</p>
+            
+        </article>
         
     </div>
-    
+</section>
+
+            <section id="publications" class="cv-section">
+    <h2 class="cv-section-title">Publications</h2>
+    <div class="cv-list">
+        
+        <article class="cv-entry">
+            <h3 class="cv-publication-title">Towards Accurate TCP FlightSize Estimation: A History-Aware Learning Approach</h3>
+            <p class="cv-publication-authors"><strong>Mingrui Zhang</strong>, Jianlin Zhang</p>
+            <p class="cv-publication-venue"><em>2025 IEEE International Performance, Computing, and Communications Conference (IPCCC)</em></p>
+            <div class="cv-link-row">
+                
+                
+                
+                <a href="https://github.com/zmrui/FlightSizeLearn" class="cv-link-chip">Code</a>
+                
+                
+                
+            </div>
+        </article>
+        
+        <article class="cv-entry">
+            <h3 class="cv-publication-title">Toward Non-Expert Customized Congestion Control</h3>
+            <p class="cv-publication-authors"><strong>Mingrui Zhang</strong>, Hamid Bagheri and Lisong Xu</p>
+            <p class="cv-publication-venue"><em>2025 IEEE International Conference on Communications(ICC)</em></p>
+            <div class="cv-link-row">
+                
+                
+                <a href="https://zmrui.github.io/NECC/" class="cv-link-chip">Page</a>
+                
+                
+                <a href="https://github.com/zmrui/NECC" class="cv-link-chip">Code</a>
+                
+                
+                
+                <a href="https://1drv.ms/p/c/0784c022e5be95a1/EXWORrNOP2NCnlTdhFCfcUkB2kyzc2DCrHx57vxoiZYdsg?e=SA15IP" class="cv-link-chip">Slides</a>
+                
+            </div>
+        </article>
+        
+        <article class="cv-entry">
+            <h3 class="cv-publication-title">Accuracy Evaluation of TCP FlightSize Estimation: Analytical and Experimental Study</h3>
+            <p class="cv-publication-authors"><strong>Mingrui Zhang</strong>, Phuong Ha, Hamid Bagheri and Lisong Xu</p>
+            <p class="cv-publication-venue"><em>2025 International Conference on Computing, Networking and Communications (ICNC)</em></p>
+            <div class="cv-link-row">
+                
+                
+                
+                <a href="https://github.com/zmrui/FlightSize" class="cv-link-chip">Code</a>
+                
+                
+                
+            </div>
+        </article>
+        
+        <article class="cv-entry">
+            <h3 class="cv-publication-title">Scalable Verification of Multi-ACK Properties in Loss-Based Congestion Control Implementations</h3>
+            <p class="cv-publication-authors">Minh Vu, Hamid Bagheri, Lisong Xu, Wei Sun and <strong>Mingrui Zhang</strong></p>
+            <p class="cv-publication-venue"><em>2024 IEEE 32nd International Conference on Network Protocols (ICNP)</em></p>
+            <div class="cv-link-row">
+                
+                
+                
+                <a href="https://github.com/verifiabletcp/asm" class="cv-link-chip">Code</a>
+                
+                
+                <a href="https://github.com/zmrui/tcp_cubic_fix" class="cv-link-chip">Code 2</a>
+                
+                
+            </div>
+        </article>
+        
+        <article class="cv-entry">
+            <h3 class="cv-publication-title">Experimental Study of Linux Flightsize Estimation</h3>
+            <p class="cv-publication-authors"><strong>Mingrui Zhang</strong></p>
+            <p class="cv-publication-venue"><em>Master&#39;s Thesis</em></p>
+            <div class="cv-link-row">
+                
+                <a href="https://digitalcommons.unl.edu/computerscidiss/233/" class="cv-link-chip">Paper</a>
+                
+                
+                
+                
+                
+            </div>
+        </article>
+        
+        <article class="cv-entry">
+            <h3 class="cv-publication-title">Symbolic ns-3 for Efficient Exhaustive Testing: Design, Implementation, and Simulations</h3>
+            <p class="cv-publication-authors">Jianfei Shao, Minh Vu, <strong>Mingrui Zhang</strong>, Asmita Jayswal and Lisong Xu</p>
+            <p class="cv-publication-venue"><em>2022 Workshop on ns-3</em></p>
+            <div class="cv-link-row">
+                
+                
+                
+                
+                
+            </div>
+        </article>
+        
+        <article class="cv-entry">
+            <h3 class="cv-publication-title">User-Perceived Latency to Measure CCAs</h3>
+            <p class="cv-publication-authors"><strong>Mingrui Zhang</strong>, Vidhi Goel, Lisong Xu</p>
+            <p class="cv-publication-venue"><em>2021 Internet Architecture Board, Workshop: Measuring Network Quality for End-Users</em></p>
+            <div class="cv-link-row">
+                
+                <a href="https://datatracker.ietf.org/meeting/interim-2021-mnqeuws-03/materials/slides-interim-2021-mnqeuws-03-sessa-mingrui-zhang-vidhi-goel-lisong-xu-user-perceived-latency-to-measure-ccas-00" class="cv-link-chip">Paper</a>
+                
+                
+                
+                
+                
+            </div>
+        </article>
+        
+    </div>
+</section>
+
+            
+<section id="service" class="cv-section">
+    <h2 class="cv-section-title">Service</h2>
+    <div class="cv-list">
+        
+        <article class="cv-entry">
+            <div class="cv-entry-head">
+                <h3 class="cv-entry-title">Reviewer</h3>
+                <span class="cv-entry-rule"></span>
+                <p class="cv-entry-period">2026</p>
+            </div>
+            <p class="cv-entry-meta">Computer Communications - Elsevier</p>
+            
+        </article>
+        
+    </div>
 </section>
 
 
 
-    <section id="awards" class="mb-8">
-    
-    <h2 class="text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2">Awards</h2>
-    <div class="space-y-4">
-        
-        <div class="mb-4">
-            <div class="flex items-baseline">
-                <h3 class="text-lg font-bold">INFOCOM 2024 Student Travel Grant </h3>
-                <span class="flex-1 border-b border-dotted border-gray-200 mx-2"></span>
-                <p class="text-gray-600">2024</p>
-            </div>
-            <p class="text-base text-gray-800">from NSF</p>
+
             
-            <div class="flex space-x-4 mt-2">
-                
-            </div>
-        </div>
+<section id="awards" class="cv-section">
+    <h2 class="cv-section-title">Awards</h2>
+    <div class="cv-list">
         
-        <div class="mb-4">
-            <div class="flex items-baseline">
-                <h3 class="text-lg font-bold">Nebraska Engineering Recruitment Fellowship</h3>
-                <span class="flex-1 border-b border-dotted border-gray-200 mx-2"></span>
-                <p class="text-gray-600">2023-2025</p>
+        <article class="cv-entry">
+            <div class="cv-entry-head">
+                <h3 class="cv-entry-title">INFOCOM 2024 Student Travel Grant </h3>
+                <span class="cv-entry-rule"></span>
+                <p class="cv-entry-period">2024</p>
             </div>
-            <p class="text-base text-gray-800">from College of Engineering at the University of Nebraska – Lincoln</p>
+            <p class="cv-entry-meta">from NSF</p>
             
-            <div class="flex space-x-4 mt-2">
-                
+            
+        </article>
+        
+        <article class="cv-entry">
+            <div class="cv-entry-head">
+                <h3 class="cv-entry-title">Nebraska Engineering Recruitment Fellowship</h3>
+                <span class="cv-entry-rule"></span>
+                <p class="cv-entry-period">2023-2025</p>
             </div>
-        </div>
+            <p class="cv-entry-meta">from College of Engineering at the University of Nebraska – Lincoln</p>
+            
+            
+        </article>
         
     </div>
-    
 </section>
 
 
 
-    
-    
-    
+
+            
+            
+            
+        </div>
+    </div>
 </div>
 
         </main>
-        <footer class="bg-gray-800 text-white p-4">
+        <footer class="cv-site-footer">
             <div class="container mx-auto px-4">
     
     <p class="text-center">Mingrui Zhang 2026</p>

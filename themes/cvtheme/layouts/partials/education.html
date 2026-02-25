@@ -1,15 +1,15 @@
-<section id="education" class="mb-8">
-    <h2 class="text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2">Education</h2>
-    <div class="space-y-4">
+<section id="education" class="cv-section">
+    <h2 class="cv-section-title">Education</h2>
+    <div class="cv-list">
         {{ range .Params.education }}
-        <div class="mb-4">
-            <div class="flex items-baseline">
-                <h3 class="text-lg font-bold">{{ .degree }}</h3>
-                <span class="flex-1 border-b border-dotted border-gray-200 mx-2"></span>
-                <p class="text-gray-600">{{ .period }}</p>
+        <article class="cv-entry">
+            <div class="cv-entry-head">
+                <h3 class="cv-entry-title">{{ .degree }}</h3>
+                <span class="cv-entry-rule"></span>
+                <p class="cv-entry-period">{{ .period }}</p>
             </div>
-            <p class="text-base text-gray-800">{{ .institution }}</p>
-        </div>
+            <p class="cv-entry-meta">{{ .institution }}</p>
+        </article>
         {{ end }}
     </div>
-</section> 
+</section>
