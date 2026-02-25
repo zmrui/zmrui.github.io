@@ -8,6 +8,8 @@ about:
   google_scholar: "https://scholar.google.com/citations?user=s-KRj78AAAAJ&hl=en"
   github: "https://github.com/zmrui"
   linkedin: "https://www.linkedin.com/in/mingrui-zhang-30772a328"
+  orcid: "https://orcid.org/0009-0003-7938-0359"
+
 education:
   - institution: "University of Nebraska-Lincoln"
     degree: "Ph.D. in Computer Science"
@@ -72,6 +74,11 @@ awards:
   - title: "Nebraska Engineering Recruitment Fellowship"
     organization: "from College of Engineering at the University of Nebraska – Lincoln"
     period: "2023-2025"
+service:
+  - role: "Reviewer"
+    organization: "Computer Communications - Elsevier"
+    period: "2026"
+  
 ---
 
 Mingrui Zhang is currently a Ph.D. Student in the School of Computing, University of Nebraska-Lincoln, under the supervision of Prof. Lisong Xu. Co-supervised by Prof. Hamid Bagheri.

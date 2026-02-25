@@ -21,6 +21,13 @@
                 Publications
             </a>
         </li>
+        {{ with .Params.service }}
+        <li>
+            <a href="#service" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200">
+                Service
+            </a>
+        </li>
+        {{ end }}
         {{ with .Params.awards }}
         <li>
             <a href="#awards" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200">
@@ -69,6 +76,13 @@
                     Publications
                 </a>
             </li>
+            {{ with .Params.service }}
+            <li>
+                <a href="#service" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200 outline-link">
+                    Service
+                </a>
+            </li>
+            {{ end }}
             {{ with .Params.awards }}
             <li>
                 <a href="#awards" class="block text-sm text-blue-600 hover:text-blue-800 hover:bg-blue-50 px-2 py-1 rounded transition-colors duration-200 outline-link">
