@@ -11,6 +11,11 @@
             </div>
             {{ with .organization }}<p class="cv-entry-meta">{{ . }}</p>{{ end }}
             {{ with .description }}<p class="cv-entry-description">{{ . }}</p>{{ end }}
+            {{ if .certificate_link }}
+            <div class="cv-link-row">
+                <a href="{{ .certificate_link | relURL }}" class="cv-link-chip">Certificate</a>
+            </div>
+            {{ end }}
         </article>
         {{ end }}
     </div>

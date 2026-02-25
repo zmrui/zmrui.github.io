@@ -78,6 +78,7 @@ service:
   - role: "Reviewer"
     organization: "Computer Communications - Elsevier"
     period: "2026"
+    certificate_link: "/Certificate_COMCOM_Recognised.pdf"
   - role: "Reviewer"
     organization: "IEEE Open Journal of the Communications Society"
     period: "2026"
