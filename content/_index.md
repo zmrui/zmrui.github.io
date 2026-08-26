@@ -56,6 +56,10 @@ publications:
     paper_link: "https://datatracker.ietf.org/meeting/interim-2021-mnqeuws-03/materials/slides-interim-2021-mnqeuws-03-sessa-mingrui-zhang-vidhi-goel-lisong-xu-user-perceived-latency-to-measure-ccas-00"
 experience:
   - company: "University of Nebraska – Lincoln"
+    position: "Independent Instructor"
+    period: "2026 Fall Semester"
+    description: "Numerical Analysis (CSCE 440/840)"
+  - company: "University of Nebraska – Lincoln"
     position: "Graduate Research Assistant"
     period: "2023 - Present"
   - company: "University of Nebraska – Lincoln"
@@ -71,6 +75,8 @@ experience:
     period: "July 2019"
     description: "Quality Engineering Intern on Kernel General Group"
 awards:
+  - title: "Mary E. and Elmer H. Dohrmann Fellowship in Computer Science"
+    period: "2026-2027"
   - title: "INFOCOM 2024 Student Travel Grant "
     organization: "from NSF"
     period: "2024"
