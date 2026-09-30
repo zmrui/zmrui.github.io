@@ -21,6 +21,9 @@ education:
     degree: "B.S. in Computer Science"
     period: "2016 - 2020"
 publications:
+  - title: "Who Verifies the Machine-generated Congestion Control? The Trust Gap in Automated CCA Design."
+    authors: "**Mingrui Zhang**, Hamid Bagheri and Lisong Xu"
+    publication: "IEEE Security & Privacy (Magazine), Cyber Hard Problems special issue, Jan/Feb 2027 (accepted for publication)"
   - title: "Towards Accurate TCP FlightSize Estimation: A History-Aware Learning Approach"
     authors: "**Mingrui Zhang**, Jianlin Zhang"
     publication: "2025 IEEE International Performance, Computing, and Communications Conference (IPCCC)"
