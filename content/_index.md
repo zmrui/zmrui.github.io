@@ -21,7 +21,7 @@ education:
     degree: "B.S. in Computer Science"
     period: "2016 - 2020"
 publications:
-  - title: "Who Verifies the Machine-generated Congestion Control? The Trust Gap in Automated CCA Design."
+  - title: "Who Verifies the Machine-Generated Congestion Control? The Trust Gap in Automated Congestion Control Algorithm"
     authors: "**Mingrui Zhang**, Hamid Bagheri and Lisong Xu"
     publication: "IEEE Security & Privacy Magazine, Cyber Hard Problems special issue, Jan/Feb 2027 (accepted for publication) doi:10.1109/MSEC.2026.3741807"
     paper_link: "papers/who-verifies-machine-generated-congestion-control.pdf"
