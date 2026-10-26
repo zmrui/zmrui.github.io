@@ -4,7 +4,7 @@ date: 2023-01-01T08:00:00-07:00
 draft: false
 about:
   name: "Mingrui Zhang"
-  title: "Ph.D. Student in Computer Science"
+  title: "Ph.D. Candidate in Computer Science"
   google_scholar: "https://scholar.google.com/citations?user=s-KRj78AAAAJ&hl=en"
   github: "https://github.com/zmrui"
   linkedin: "https://www.linkedin.com/in/mingrui-zhang-30772a328"
@@ -106,6 +106,6 @@ service:
   
 ---
 
-Mingrui Zhang is currently a Ph.D. Student in the School of Computing, University of Nebraska-Lincoln, under the supervision of Prof. Lisong Xu. Co-supervised by Prof. Hamid Bagheri.
+Mingrui Zhang is currently a Ph.D. candidate in the School of Computing at the University of Nebraska-Lincoln, under the supervision of Prof. Lisong Xu and co-supervised by Prof. Hamid Bagheri.
 
 His research interests include networking and software engineering, including network protocols, TCP congestion control, and formal methods.
