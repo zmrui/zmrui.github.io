@@ -4,7 +4,7 @@ date: 2023-01-01T08:00:00-07:00
 draft: false
 about:
   name: "Mingrui Zhang"
-  title: "Ph.D. Student in Computer Science"
+  title: "Ph.D. Candidate in Computer Science"
   google_scholar: "https://scholar.google.com/citations?user=s-KRj78AAAAJ&hl=en"
   github: "https://github.com/zmrui"
   linkedin: "https://www.linkedin.com/in/mingrui-zhang-30772a328"
@@ -23,7 +23,7 @@ education:
 publications:
   - title: "Who Verifies the Machine-Generated Congestion Control? The Trust Gap in Automated Congestion Control Algorithm"
     authors: "**Mingrui Zhang**, Hamid Bagheri and Lisong Xu"
-    publication: "IEEE Security & Privacy Magazine, Cyber Hard Problems special issue, Jan/Feb 2027 (accepted)"
+    publication: "IEEE Security & Privacy Magazine, Cyber Hard Problems special issue"
     doi_link: "https://doi.org/10.1109/MSEC.2026.3741807"
     paper_link: "papers/who-verifies-machine-generated-congestion-control.pdf"
   - title: "Towards Accurate TCP FlightSize Estimation: A History-Aware Learning Approach"
@@ -106,6 +106,6 @@ service:
   
 ---
 
-Mingrui Zhang is currently a Ph.D. Student in the School of Computing, University of Nebraska-Lincoln, under the supervision of Prof. Lisong Xu. Co-supervised by Prof. Hamid Bagheri.
+Mingrui Zhang is currently a Ph.D. candidate in the School of Computing at the University of Nebraska-Lincoln, under the supervision of Prof. Lisong Xu and co-supervised by Prof. Hamid Bagheri.
 
 His research interests include networking and software engineering, including network protocols, TCP congestion control, and formal methods.
